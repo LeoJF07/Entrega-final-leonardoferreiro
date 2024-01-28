@@ -21,7 +21,7 @@ main h2 {
   margin-bottom: 100px;
 }
 
-.imagen-red, .texto-blue, .imagen-blue, .texto-gold, .imagen-gold, .texto-black, .imagen-black {
+.imagen-red, .imagen-blue, .imagen-gold, .imagen-black {
   width: 60%;
   align-items: center;
   display: flex;
@@ -39,16 +39,16 @@ main h2 {
   border-radius: 10px;
   text-align: center;
   padding: 50px;
-  padding: 50px;
   font-family: "Times New Roman", Times, serif;
   margin-bottom: 50px;
 }
 
-.texto-red {
+.texto-red, .texto-blue, .texto-gold, .texto-black {
+  margin-bottom: 50px;
+  padding: 50px;
   text-align: center;
-  font-style: oblique;
-  font-size: larger;
-  margin-top: 50px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
 }
 
 .color-blacklabel {
