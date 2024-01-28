@@ -1,0 +1,28 @@
+@mixin fuente-titulos ($fondo, $color, $size, $borde, ){
+    background-color: $fondo;
+            color: $color;
+            font-size: $size;
+            border-radius: $borde;
+}
+
+.color-blacklabel{
+    margin-bottom: 50px;
+    padding: 50px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    @include fuente-titulos(black,azure , 60px, 20px,)
+}
+    .color-goldlabel{
+        margin-bottom: 50px;
+    padding: 50px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    @include fuente-titulos( rgba(192, 140, 9, 0.945),black ,60px ,20px )
+}
+.color-bluelabel{
+    margin-bottom: 50px;
+    padding: 50px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    @include fuente-titulos(rgb(23, 5, 129),azure , 60px , 20px )
+}

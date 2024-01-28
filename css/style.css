@@ -1,262 +1,232 @@
-
-body{
-    background-color: rgb(245, 234, 184)!important;
+/*imports*/
+main .titulo-oficial {
+  background-image: linear-gradient(to right, rgb(255, 236, 127), rgba(80, 66, 2, 0.466));
+  font-family: "Times New Roman", Times, serif;
+  font-size: 75px !important;
+  text-align: center;
+  padding: 30px;
+  margin: 0;
+}
+main .slogan {
+  text-align: center !important;
+  font-size: 50px;
+  font-style: oblique;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  margin-top: 100px;
+}
+main h2 {
+  font-size: 22px;
+  font-style: oblique;
+  margin-top: 70px;
+  margin-bottom: 100px;
 }
 
-p{
-    color: rgb(13, 13, 14);
-    font-size: larger;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+.imagen-red, .texto-blue, .imagen-blue, .texto-gold, .imagen-gold, .texto-black, .imagen-black {
+  width: 60%;
+  align-items: center;
+  display: flex;
+  border-radius: 20px;
+  padding-bottom: 30px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: auto;
 }
 
-.jhonnie-logo{
-    justify-items: auto;
-    height: 280px; 
+.color-redlabel {
+  background-color: rgba(109, 8, 8, 0.836);
+  font-size: 70px;
+  border-radius: 10px;
+  text-align: center;
+  padding: 50px;
+  padding: 50px;
+  font-family: "Times New Roman", Times, serif;
+  margin-bottom: 50px;
 }
 
-.grid-container{
-    margin: 25px;
-    display: grid;
-    grid-template-columns: repeat(2, fr);
-    grid-template-rows: repeat(2, 320px);
-    row-gap: 15px;
-    column-gap: 15px;
+.texto-red {
+  text-align: center;
+  font-style: oblique;
+  font-size: larger;
+  margin-top: 50px;
 }
 
-.item01 h2{
-    margin-top: 15px;
-    color:gold;
-    font-size: 3rem;
-    font-family: 'Times New Roman', Times, serif;
-}
-.item01 p{
-    margin-bottom: 50px;
-    color:gold;
-    font-family: Arial, Helvetica, sans-serif;   
+.color-blacklabel {
+  margin-bottom: 50px;
+  padding: 50px;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  background-color: black;
+  color: azure;
+  font-size: 60px;
+  border-radius: 20px;
 }
 
-.item01{
-    border-radius: 7px;
-    background-color:black;
-    grid-row: 1/4;
-    grid-column: 1/2;
-    padding: 15px;
+.color-goldlabel {
+  margin-bottom: 50px;
+  padding: 50px;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  background-color: rgba(192, 140, 9, 0.945);
+  color: black;
+  font-size: 60px;
+  border-radius: 20px;
 }
-.item01 .container-img img{
+
+.color-bluelabel {
+  margin-bottom: 50px;
+  padding: 50px;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  background-color: rgb(23, 5, 129);
+  color: azure;
+  font-size: 60px;
+  border-radius: 20px;
+}
+
+header {
+  background-color: rgb(245, 234, 184);
+}
+header nav ul li a {
+  margin: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: x-large;
+}
+
+.nav-item {
+  font-size: medium;
+}
+
+.nav-item:hover {
+  margin-left: 10px;
+  margin-right: 10px;
+  transition: 1s;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(245, 234, 184) !important;
+}
+
+.grid-container {
+  margin: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, fr);
+  grid-template-rows: repeat(2, 250px);
+  row-gap: 50px;
+  column-gap: 30px;
+}
+.grid-container .item01 {
+  border-radius: 7px;
+  background-color: rgba(44, 2, 2, 0.877);
+  grid-row: 1/4;
+  grid-column: 1/4;
+  padding: 50px;
+  width: 100%;
+}
+.grid-container .item01 p {
+  margin-bottom: 50px;
+  color: gold;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: larger;
+}
+.grid-container .item01 img {
+  width: 100%;
+  border-radius: 7px;
+}
+.grid-container .item01 h2 {
+  text-align: center !important;
+  margin-top: 15px;
+  color: gold;
+  font-size: 5rem;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.item02 {
+  background-color: black;
+  border-radius: 7px;
+  padding: 50px;
+  width: 100%;
+  grid-column: 1/4;
+}
+.item02 img {
+  width: 100%;
+  border-radius: 7px;
+}
+.item02 p {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  color: gold;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: larger;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .grid-container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  .grid-container .item01 {
+    width: 100%;
+  }
+  .grid-container .item01 p {
+    font-size: 20px;
+  }
+  .grid-container .item01 p img {
     width: 100%;
     border-radius: 7px;
+  }
+  .grid-container .item01 p img h2 {
+    font-size: 20px;
+  }
 }
-.item02{
-    background-color:black;
+@media (max-width: 600px) {
+  .grid-container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  .grid-container .item02 {
+    width: 100%;
+  }
+  .grid-container .item02 p {
+    font-size: 20px;
+  }
+  .grid-container .item02 p img {
+    width: 100%;
     border-radius: 7px;
-    padding: 20px;   
+  }
+}
+@media (max-width: 800px) {
+  h1 {
+    font-size: 20px;
+  }
+  .slogan {
+    font-size: 30px;
+  }
+}
+.texto-botellas img {
+  width: 950px;
+  margin-left: 150px;
+  border-radius: 12px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+.texto-botellas h2 p {
+  text-align: center;
+  font-size: 100%;
 }
 
-.item02 p{
-    width: 80%;
-    margin-top: 1px;
-    margin-bottom: 50px;
-    color:gold;
-    font-family: Arial, Helvetica, sans-serif;
-}
-.item02 img{
-border-radius: 7px;
-width: 80%;
-position: relatie;
-left: 200px;
-bottom: 250px;
-max-width: 100%;
-            height: auto;
-            display: block;
-            margin: auto;
-}
-.item03{
-    background-color:black;
-    border-radius: 7px;
-    padding: 20px;
-}
-.item03 p{
-    color: gold;
-    width: 40%;
-    margin-bottom: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-.item03 img{
-border-radius: 7px;
-width: 52%;
-position: relative;
-left: 265px;
-bottom: 280px;
-}
-.imagen-red{
-    width: 60%;
-    margin-left: 220px;
-    align-items: center;
-    display: flex;
-    border-radius: 50px;
-    padding-bottom: 20px;
-    max-width: 100%;
-            height: auto;
-            display: block;
-            margin: auto;
-}
-.imagen-black{
-    width: 60%;
-    margin-left: 220px;
-    align-items: center;
-    display: flex;
-    border-radius: 50px;
-    padding-bottom: 20px;
-    padding-top: 20px;
-    max-width: 100%;
-            height: auto;
-            display: block;
-            margin: auto;
-}
-.imagen-gold{
-    width: 60%;
-    margin-left: 220px;
-    align-items: center;
-    display: flex;
-    border-radius: 50px;
-    padding-bottom: 20px;
-    padding-top: 20px;
-    max-width: 100%;
-            height: auto;
-            display: block;
-            margin: auto;
-}
-.imagen-blue{
-    width: 60%;
-    margin-left: 220px;
-    align-items: center;
-    display: flex;
-    border-radius: 50px;
-    padding-bottom: 20px;
-    padding-top: 20px;
-    max-width: 100%;
-            height: auto;
-            display: block;
-            margin: auto;
+h3 {
+  text-align: center;
+  font-size: larger;
+  padding-top: 30px;
 }
 
-h1{
- background-color: rgb(255, 236, 127);
- font-family: 'Times New Roman', Times, serif;
- font-size: 75px !important;
- text-align: center;
- padding: 30px;
- margin: 0;
-}
-.slogan{
-    text-align: center !important;
-    font-size: 52px;
-    font-style: oblique;
-    background-color: rgb(255, 236, 127);
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    margin: 0;
-    
-}
-h2{
-    font-size: 22px;
-    font-style: oblique;
-    margin-top: 70px;
-    margin-bottom: 100px;
-}
-
-h3{font-size: 22px;
-font-style: initial;}
-h4{
-    font-style: oblique;
-    font-size: xx-small;
-    margin-top: 90px;
-}
-
-.texto-red{
-    text-align: center;
-    font-style: oblique;
-}
-.texto-black{
-    text-align: center;
-    font-style: oblique;
-}
-.texto-gold{
-    text-align: center;
-    font-style: oblique;
-}
-.texto-blue{
-    text-align: center;
-    font-style: oblique;
-}
-.color-redlabel{
-    background-color: rgba(238, 10, 10, 0.555);
-    font-size: 40px;
-    border-radius: 30px;
-}
-.color-blacklabel{background-color: black;
-color: azure;
-font-size: 40px;
-border-radius: 30px;
-}
-
-.color-goldlabel{background-color: gold;
-    font-size: 40px;
-    border-radius: 30px;
-
-}
-.color-bluelabel{background-color: blue;
-    font-size: 40px;
-    border-radius: 30px;
-}
-.botellas{
-    width: 950px;
-    margin-left: 150px;
-    border-radius: 12px;
-    max-width: 100%;
-            height: auto;
-            display: block;
-            margin: auto;   
-}
-.pagina-oficial{
-    text-align: center;
-    display: block;
-}
-.bg-jhonnie{
-    background-color:  rgba(231, 207, 98, 0.349);
-}
-header nav ul li a{
-    margin: 20px    
-}
-.nav-item{
-    font-size: larger;
-}
-.nav-item:hover{
-    margin-left: 10px;
-    margin-right: 10px;
-    transition: 1s;
-    
-}
-@media (max-width: 768px) {
-    .grid-container {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    }
-}
-
-@media (max-width: 900px) {
-    .grid-container {
-        grid-template-columns: 1fr;
-    }
-}
-@media (max-width: 900px) {
-    h1 {
-        font-size: 20px;
-    }
-
-    .slogan {
-        font-size: 30px;
-        
-    }
-
-}
-
-
+/*# sourceMappingURL=style.css.map */

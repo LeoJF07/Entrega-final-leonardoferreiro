@@ -1,0 +1,14 @@
+{
+  "name": "flex",
+  "version": "1.0.0",
+  "description": "Este es un proyecto de pagina Web de la marca de whiskies mas conocida del mundo.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.70.0"
+  }
+}

@@ -1,0 +1,20 @@
+.imagen-black{
+    @extend .imagen-red;
+}
+.texto-black{
+    @extend .imagen-red;
+}
+.imagen-gold{
+@extend .imagen-red;
+    }
+    .texto-gold{
+        @extend .imagen-red;
+    }
+   
+.imagen-blue{
+@extend .imagen-red;
+        }
+        .texto-blue{
+            @extend .imagen-red;
+        }
+        

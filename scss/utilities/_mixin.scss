@@ -1,0 +1,6 @@
+@mixin fuente-titulos ($fondo, $color, $size, $borde, ){
+    background-color: $fondo;
+            color: $color;
+            font-size: $size;
+            border-radius: $borde;
+}

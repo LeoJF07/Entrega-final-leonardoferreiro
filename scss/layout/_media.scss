@@ -1,0 +1,47 @@
+@media (max-width: 600px) {
+    .grid-container {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    .item01{
+        width: 100%;
+        p{
+            font-size: 20px;
+            img{
+                width: 100%;
+                border-radius: 7px;
+                h2{
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+    }
+    
+}
+
+@media (max-width: 600px) {
+    .grid-container {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        .item02{
+            width: 100%;
+            p{
+                font-size: 20px;
+                img{
+                    width: 100%;
+                    border-radius: 7px;
+            
+                }
+            }
+        }
+    }
+}
+@media (max-width: 800px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    .slogan {
+        font-size: 30px;
+        
+    }
+
+}
